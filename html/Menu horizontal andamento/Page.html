@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider Menu Push</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="stype-css-page.css">
+</head>
+<body>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" >
+				<div class="image-box">
+					<img src="img-test.jpg">
+				</div>
+				<div class="description">
+					<h3>Home <br> <span>Inicio da página</span></h3> 
+				</div>
+			</div>
+			<div class="swiper-slide" >
+				<div class="image-box">
+					<img src="img-test.jpg">
+				</div>
+				<div class="description">
+					<h3>Comida <br> <span>Inicio da página</span></h3> 
+				</div>
+			</div>
+			<div class="swiper-slide" >
+				<div class="image-box">
+					<img src="img-test.jpg">
+				</div>
+				<div class="description">
+					<h3>Jogos <br> <span>Inicio da página</span></h3> 
+				</div>
+			</div>
+			<div class="swiper-slide" >
+				<div class="image-box">
+					<img src="img-test.jpg">
+				</div>
+				<div class="description">
+					<h3>Delivery <br> <span>Inicio da página</span></h3> 
+				</div>
+			</div>
+			<div class="swiper-slide" >
+				<div class="image-box">
+					<img src="img-test.jpg">
+				</div>
+				<div class="description">
+					<h3>Polícia <br> <span>Inicio da página</span></h3> 
+				</div>
+			</div>
+			<div class="swiper-slide" >
+				<div class="image-box">
+					<img src="img-test.jpg">
+				</div>
+				<div class="description">
+					<h3>Emergência <br> <span>Inicio da página</span></h3> 
+				</div>
+			</div>
+		</div><br>
+
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+	</div>
+	<script type="text/javascript" src="swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			effect: 'coverflow',
+			grabCursor: true,
+			centeredSlides: true,
+			slidesPerView: 'auto',
+			coverflowEffect: {
+				rotate: 10,
+				stretch: 0,
+				depth: 300,
+				modifier: 1,
+				slideShadows : true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+	</script>
+</body>
+</html>
