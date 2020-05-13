@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+body {
+	background: cyan;
+	background-image: url('ceu.jpg');
+
+}
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60vh;
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 0;
+}
+section .content {
+	text-align: center;
+}
+ section .content h2 {
+	font-size: 24vw;
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 1em;
+background-image: url
+
+}
+section:nth-child(1) .content h2 {
+	background: url('ceu.jpg');
+}
