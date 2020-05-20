@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+body {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*/
+	font-family: 'Balsamiq Sans', sans-serif;
+	background: url('https://images.pexels.com/photos/1906087/pexels-photo-1906087.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat fixed 50% 50%;
+}
+header {
+	position: relative;
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 10px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0, .2);
+}
+.brand {
+	color: #87CEEB;
+	height: 60px;
+	font-size: 36px;
+	font-weight: 700px;
+	line-height: 60px;
+	padding: 0 20px;
+	/*background:#ccc;*/
+	text-align: center;
+	box-sizing: border-box;
+	float: left;
+	text-decoration: none;
+}
+.navigation {
+	float: right;
+}
+.fix {
+	clear: both;
+}
+.navigation ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.navigation ul li {
+	list-style: none;
+}
+.navigation ul li a {
+	display: block;
+	margin: 10px 0;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: #87CEEB;
+}
+.navigation ul li a.active,
+.navigation ul li a:hover {
+	background: #87CEEB;
+	color: #fff;
+	transition: .3s;
+}
+@media screen and (max-width: 1200px) {
+	header {
+		margin: 20px;
+	}
+}
+@media screen and (max-width: 720px) {
+	.toggle-menu {
+		display: block;
+		width: 50px;
+		height: 45px;
+		margin: 10px;
+		/*background: #ccc;*/
+		float: right;
+		font-size: 30px;
+		text-align: center;
+		cursor: pointer;
+		color: #87CEEB;
+	}
+	.toggle-menu:before {
+		content: '\f0c9';
+		font-family: fontAwesome;
+		line-height: 40px;
+	}
+	.toggle-menu.active:before {
+		content: '\f00d';
+	}
+	.navigation {
+		display: none;
+	}
+	.navigation.active {
+		display: block;
+		width: 100%;
+	}
+	.navigation.active ul {
+		display: block;
+	}
+	.navigation.active ul li {
+		margin: 0;
+	}
+}
