@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    font-family: Quicksand;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('https://minhabiblioteca.com.br/wp-content/uploads/2017/12/background.jpg') no-repeat fixed 50% 50%;
+    background-size: cover;
+}
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: justify;
+}
+.brand {
+    position: fixed;
+    float: left;
+    margin: 15px 35px;
+    color: azure;
+    font-weight: bold;
+    font-size: 25px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: aqua;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+nav.black ul {
+    background: black;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+}
+.menu-icon {
+    width: 100%;
+    background: black;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    cursor: pointer;
+    color: azure;
+    display: none;
+}
+/*()*/
+@media(max-width: 580px) {
+    .brand {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0px;
+        background: black;
+    }
+    nav.black ul {
+        background: black;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 25px 0;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
