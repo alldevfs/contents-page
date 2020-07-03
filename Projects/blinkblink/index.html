@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aaa</title>
+	<style type="text/css">
+		.change-color {
+			margin: auto;
+			background: red;
+			width: 1024px;
+			height: 1024px;
+			transition: 0.1s; 
+		}
+	</style>
+</head>
+<body>
+	<div class="change-color"></div>
+	<script type="text/javascript">
+		const colorDiv = document.querySelector('.change-color');
+		let counter = 0;
+
+		const colorArr = ['red', 'orange']
+
+		setInterval(
+			()=> {
+				counter++
+
+				if (counter == colorArr.length) {
+					counter = 0
+				}
+
+				colorDiv.style.background = colorArr[counter];
+			}, 500
+			)
+		</script>
+	</body>
+	</html>
