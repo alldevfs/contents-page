@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Alert-td-SDM",
+	"version": "0.1",
+	"content_scripts": [
+	{
+		"matches": [
+		"http://128.15.10.162:8080/pentaho/api/repos/:public:report:monitoramento-realtime:monitoramento-realtime.xcdf/generatedContent?ts=1473169385444%20%3Chttp://128.15.10.162:8080/pentaho/api/repos/:public:report:monitoramento-realtime:monitoramento-realtime.xcdf/generatedContent?ts=1473169385444%3E"
+		],
+		"css": [
+			"style.css"
+		],
+		"js": [
+			"content.js"
+	    ]
+	}
+  ]
+}

@@ -1,0 +1,44 @@
+.body-style{
+	background: none;
+	background-color: black;
+	color: #fdeff9;
+
+}
+
+.transit {
+	transition: 0.5s;
+}
+/*.button-style {
+	color: yellow;
+	background-color: black;
+	font-weight: bold;
+	font-size: 4rem;
+	border: none;
+	padding: 20px;
+	margin-left: 52px;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: 0.3s;
+}
+.button-style:hover {
+	color: white;
+	background-color: purple;
+	transition: 0.3s;
+	}*/
+/*.quality-style {
+	color: yellow;
+	background-color: black;
+	font-weight: bold;
+	font-size: 2rem;
+	border: none;
+	padding: 20px;
+	margin-left: 52px;
+	cursor: pointer;
+	border-radius: 7px;
+	transition: 0.3s;
+}
+.quality-style:hover {
+	color: white;
+	background-color: green;
+	transition: 0.3s;
+}*/
